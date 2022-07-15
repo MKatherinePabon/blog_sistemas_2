@@ -33,7 +33,7 @@ De esta manera puede continuar navegando en la pagina puede usar el menu que cue
 
 DOCUMENTACION
 
-Explicar mediante capturas del codigo 
+Explicacion mediante capturas del codigo (Subido al classroom en formato pdf)
 
 las funcionalidades del sistema
 El sitema puede hacer login y log out
