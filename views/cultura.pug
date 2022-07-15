@@ -1,0 +1,46 @@
+doctype html
+html(lang= "en")
+    head
+        meta(charset= "UTF-8")
+        meta(http-equiv= "X-UA-Compatible", content="IE=edge")
+        meta(name= "viewport" content= "width=device-width, initial-scale")
+        link(rel="stylesheet", href="/css/cultura.css")
+        title Blog de idiomas - MK
+    body
+        header(class="header")
+            img(src="/images/Logo.png", class="logo")
+            div(class="botones")
+                ul(class="nav-bar")
+                    li(class="item"): a(href="/") INICIO
+                    li(class="item"): a(href="/polaco") POLACO
+                    li(class="item"): a(href="/cultura") CULTURA
+                    li(class="item"): a(href="/contactame") CONTACTAME
+                    if (_usuario)
+                        li(class="item"): a(href="/posts") ADMIN
+                        //- li(class="item"): a(href="/editar") POSTEA
+                        //- li(class="item"): a(href="/logout") CERRAR
+                    else 
+                        li(class="item"): a(href="/login") ACCEDER
+                //- a(href="/") ¿?
+        main
+            h2 Bienvenidos a conocer la historia polaca
+            div
+                p [  ] Los polacos descienden de las tribus eslavas que poblaban Europa Central y Oriental desde el siglo VI después de Cristo.
+                p [  ] Polonia nace como Nación en el año 966 después de Cristo. Tras el bautismo de Miecislao I, que al adoptar el cristianismo, elevó el nivel de reconocimiento de su monarquía al de otros grandes monarcas de Europa.
+                p [  ] Polonia durante su reinado y posteriores pudo hacerse de grandes conquistas como lo fue con Kiev, sin embargo esto duró poco tiempo. Bajo el reinado de Miecislao II comenzó una larga crisis, los vecinos del oeste, este y sur invadían las fronteras. Luego de la invasión bohemia en 1038 Polonia como Estado dejó de existir.
+                //- 
+                p [  ] Bajo el reinado de Casimiro el Restaurador fue el resurgimiento de Polonia como nación, llevando a la reconquista de gran parte de su territorio. Además del levantamiento como Estado y de la parte Eclesiástica.
+                p [  ] Luego de este surgir, el rey Boleslao III dividió el territorio del reino entre sus hijos con la intención de evitar conflictos (Año 1138) durando casi 200 años esta época de fragmentación feudal.
+                p [  ]  Los Piastas (como fueron nombrados los pertenecientes a esta generación) competían entre sí por los territorios, tenían guerras fraticidas y estaban en constante conflicto. Sin embargo, fue una de las épocas de mayor crecimiento de Polonia, desde lo económico como en lo social. Al estar individualizada, cada región se formaba y así crearon un conjunto mayor más robusto y establecido.
+                p [  ] La Iglesia jugó un papel muy importante en la reunificación de Polonia como nación. A través de ellos existía la figura de Polonia aún unida a través de la red de monasterios y las escuelas (Siglo XIII). En 1295 Premislao II se transformaría en el primer rey de Polonia luego de la reunificación. Esto se pudo terminar de establecer con la coronación de Vladislao el Breve en 1320.
+                p [  ] Al morir Vladislao fue coronado su hijo, Casimiro el Grande. Este se encargaría de codificar las leyes y velar por su cumplimiento. Amplió los derechos de los judíos, construyó varios castilos, apoyó el proyecto de la construcción de murallas alrededor de las ciudades, fundó iglesias y hubo un gran desarrollo económico en la nación.
+                p [  ]  Casimiro no tuvo hijos varones, ante esta situación sería coronado en 1370 el rey de Hungría Luis de Anjou, nieto de Ladislao el Breve.
+                p [  ] Ante la muerte de Luis, la caballería polaca tomó la decisión de coronar a su hija menor Eduvigis (de tan solo 11 años). Se casó con el príncipe Jagellón, de Lituania. Dando pie a la nueva gran dinastía: Los Jagellón. Esto uniría ambas naciones de forma voluntaria, algo que sería completamente excepcional para los años que corrían.
+                p [  ] Ladislao Jagellón (hijo de Eduvigis) renovó la Academia de Cracovia. La primera Universidad de Polonia, fundada por Casimiro el Grande. Esta Universidad se alzaría como una de los más importantes centros científicos y en el lugar de formación de las élites centroeuropeas.
+                p [  ]  La Orden Teutónica apareció como contraparte de la unión entre Polonia y Lituania. Estos serían derrotados tras la Guerra de los Trece Años.
+                p [  ] Para asegurar la corona a sus descendientes, Ladislao Jagellón y sus sucesores fueron aumentando sistemáticamente los privilegios de la nobleza procedente de la caballería. Esto con el tiempo llevaría a la implementación de un sistema único para la época: la democracia de los nobles. El consejo real se convirtió en senado y los representantes de la nobleza crearon el Sejm, siendo la cámara baja del parlamento.
+                p [  ] El reinado de Alejandro Jagellón trajo consigo la constitución de Nihil novi, que condicionaba las decisiones reales al visto bueno del parlamento. Debido al gran número de nobles, entre un 8 y un 10% de la población tenía participación en el poder. En comparación a siglos más tarde (siglo XIX) en Francia el 1.5% tenía derecho al voto. Mientras que en Gran Bretaña era el 3% de la población.
+        footer
+            p  &copy; Copyright | Mailliw Katherine Pabon Duque
+            p Prueba practica de Sistemas II
+            p Facilitador Ing. Mariano Garcia

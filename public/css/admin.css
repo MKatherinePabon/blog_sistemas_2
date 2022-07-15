@@ -1,0 +1,167 @@
+@charset 'utf-8';
+
+@import url('./normalize.css');
+
+:root{
+    --color-primario: #8a4e6c;
+    --color-secundario: #a11f1f;
+    --color-background-sombra: #E92F3D30;
+    --color-background: #EFF6F5;
+    --color-texto: #A1A5A6;
+}
+
+body{
+    background: var(--color-background);
+    text-align: -webkit-center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding: 50px 50px 50px 50px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    min-height: calc(100vh - 10vh);
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background: #fff;
+    column-gap: 50px;
+}
+
+header ul{
+    list-style: none;
+    align-self: center;
+}
+
+header li{
+    float: left;
+    padding: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/*font-family: 'Arial', sans-serif;*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+nav {
+	height: 150px;
+	width: 100%;
+	background: antiquewhite;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+aside {
+	padding: 2rem;
+	background: lightskyblue;
+	width: 20%;
+	font-size: 1rem;
+}
+
+.button {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 0.8rem;
+	padding: 0.8rem;
+	background: white;
+	/*box-shadow: 1px 1px 10px lightgrey;*/
+}
+
+.posts-container {
+	padding: 2rem;
+	width: 80%;	
+}
+
+.post {
+	padding: 2rem;
+	position: relative;
+	border-radius: 1rem;
+	box-shadow: 10px 10px 8px lightgrey;
+	margin-bottom: 2rem;
+}
+
+.post-header {
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 2rem;
+}
+
+.options-button {
+	border: 1px solid grey;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5rem;
+	border-radius: 50%;
+	box-shadow: 5px 5px 8px lightgrey;
+	cursor: pointer;
+}
+
+.options {
+	position: absolute;
+	z-index: 20;
+	top: 3rem;
+	right: 6rem;
+	font-size: 1rem;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.options a {
+	margin-right: 0.8rem;
+	text-decoration: none;
+	color: black;
+}
+
+.options.open {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    background: #fff;
+    justify-content: center;
+    align-items: center;    
+}
+
+footer p{
+    font-weight: 600;
+    line-height: 30px;
+    /*padding: 30px 0;*/
+    margin: 0;
+}

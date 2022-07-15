@@ -1,0 +1,45 @@
+doctype html
+html(lang= "en")
+    head
+        meta(charset= "UTF-8")
+        meta(http-equiv= "X-UA-Compatible", content="IE=edge")
+        meta(name= "viewport" content= "width=device-width, initial-scale")
+        link(rel="stylesheet", href="/css/home.css")
+        title Blog de idiomas - MK
+    body
+        header(class="header")
+            img(src="/images/Logo.png", class="logo")
+            div(class="botones")
+                ul(class="nav-bar")
+                    li(class="item"): a(href="/") INICIO
+                    li(class="item"): a(href="/polaco") POLACO
+                    li(class="item"): a(href="/cultura") CULTURA
+                    li(class="item"): a(href="/contactame") CONTACTAME
+                    if (_usuario)
+                        li(class="item"): a(href="/posts") ADMIN
+                        //- li(class="item"): a(href="/editar") POSTEA
+                        //- li(class="item"): a(href="/logout") CERRAR
+                    else 
+                        li(class="item"): a(href="/login") ACCEDER
+                //- a(href="/") ¿?
+        main
+            section(class="saludo")
+                h1 BIENVENIDOS AL BLOG MK
+                p Un cerebro que sabe moverse rápidamente entre dos idiomas es uno que tiene facilidad para analizar varias situaciones simultáneas, una habilidad indispensable para tomar mejores decisiones. Te animo a que en este espacio encuentres la motivacion para empezar tu busqueda de entender la gramatica inglesa y poner en practica tus conocimientos. Ademas aprende lo mas usado del habla Polaca y sorprendete con su cultura.
+            section(class="casillas")
+                div(class="casillas-hijas")
+                    img(class="casilla_imagen" src="/images/banderaUsa.jpg")
+                    p El uso del inglés en los Estados Unidos se heredó de la colonización británica de América. La primera oleada de colonos de habla inglesa llegó a América del Norte en el siglo XVII. En ese tiempo, había también en el continente hablantes de neerlandés, francés, español, alemán, sueco, escocés, galés, irlandés, gaélico escocés y finés, y diversos idiomas indígenas americanos.
+                    p El inglés es el idioma de la comunicación internacional, del comercio y las finanzas. El inglés es una lengua franca en muchos rincones del planeta y el idioma oficial de muchas Organizaciones Internacionales como la Unión Europea, Naciones Unidas o la Unesco. Esto se debe a razones históricas y políticas, debido a la importancia que tuvo el Imperio Británico en el pasado, cuando extendió su lengua por todos los continentes, y a la importancia como potencia actual de Estados Unidos. Por todo esto podemos decir que es el idioma universal, el que te ayudará a comunicarte sin barreras.
+                    p El inglés es el idioma más aprendido como segunda lengua. Si bien el número de nativos que hablan inglés son entre 300 y 400 millones, el número de personas que lo aprenden como una segunda lengua es el mismo, superando al resto de los idiomas. Además saber inglés nos ayudará a entender mejor nuestra cultura y nuestro idioma, ya que no son pocos los anglicismos que pueblan nuestra vida.
+
+                div(class="casillas-hijas")
+                    img(class="casilla_imagen" src="/images/banderaPolonia.png")
+                    p El polaco es el idioma oficial de Polonia, pero también se habla en otros países como Australia, Austria, Azerbaiyán, Bielorrusia, Canadá, Croacia, República Checa, Estonia, Finlandia, Alemania, Hungría, Israel, Kazajstán, Letonia, Lituania, Rumania, Rusia, Serbia, Eslovaquia, Ucrania, Emiratos árabes Unidos y Estados Unidos de América. Además, cuenta con casi 44 millones de hablantes y es el segundo idioma por 10.000 personas en todo el mundo.
+                    p Hablar polaco está cada día más valorado en el mercado laboral, tanto para trabajar desde tu país de origen, para tener contacto con empresas polacas, como si lo que quieres es irte a buscar una oportunidad de trabajo y vivir en Polonia, aprender polaco te abrirá muchas puertas a la hora de encontrar trabajo.
+                    p El conocimiento de la lengua polaca será una ventaja a la hora de encontrar cualquier trabajo: el empleador pensará que eres una persona valiente, capaz de trabajar bajo estrés y de manejar situaciones difíciles ya que has logrado aprender un idioma considerado difícil para la mayoria de la gente.
+                    p Polonia es un país hermoso, con mucha historia y mucho que conocer. Hay bosques, lagos, montañas e incluso el mar, por lo que es el lugar perfecto para todos. Los polacos son gente muy amable y simpática, por lo que harán que te sientas como en casa. En Polonia hay muchos lugares para explorar, y hablando un poco de polaco, ¡viajar por el país será aún más fácil!
+        footer
+            p  &copy; Copyright | Mailliw Katherine Pabon Duque
+            p Prueba practica de Sistemas II
+            p Facilitador Ing. Mariano Garcia

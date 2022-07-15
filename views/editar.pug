@@ -1,0 +1,43 @@
+doctype html
+html(lang= "en")
+    head
+        meta(charset= "UTF-8")
+        meta(http-equiv= "X-UA-Compatible", content="IE=edge")
+        meta(name= "viewport" content= "width=device-width, initial-scale")
+        link(rel="stylesheet", href="/css/editar.css")
+        title Blog de idiomas - MK
+    body
+        header(class="header")
+            img(src="/images/Logo.png", class="logo")
+            div(class="botones")
+                ul(class="nav-bar")
+                    li(class="item"): a(href="/") INICIO
+                    li(class="item"): a(href="/polaco") POLACO
+                    li(class="item"): a(href="/cultura") CULTURA
+                    li(class="item"): a(href="/contactame") CONTACTAME
+                    if (_usuario)
+                        li(class="item"): a(href="/posts") ADMIN
+                        //- li(class="item"): a(href="/editar") POSTEA
+                        //- li(class="item"): a(href="/logout") CERRAR
+                    else 
+                        li(class="item"): a(href="/login") ACCEDER
+                //- a(href="/") ¿?
+        main
+            section(id="contacto")
+                div(class="titulo-contacto")
+                    h2(class="subtitulos") ¡Que todos aprendan con un buen contenido!
+                    h1(class="titulos") POST
+                    h3= _msg
+                form(action=`/editar/${_id}` id="formulario" method="post")
+                    div(class="two-fiels")
+                        div(class="inputConIcon")
+                            input(type="titulo" id= "titulo" name="titulo" class="input-email" placeholder="Titulo" value= _name)
+                    div(class="fiels")
+                        div(class="inputConIcon textareaIcon")
+                            textarea(name="comentarios" id="comentarios" class="textarea" placeholder="Escribe aqui tu contenido")= _text
+                    div(class="fiels-btn")
+                        input(type="submit" class="btns btn-input" value="Submit")
+        footer
+            p  &copy; Copyright | Mailliw Katherine Pabon Duque
+            p Prueba practica de Sistemas II
+            p Facilitador Ing. Mariano Garcia

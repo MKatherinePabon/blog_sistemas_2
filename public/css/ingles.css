@@ -1,0 +1,185 @@
+@charset 'utf-8';
+
+@import url('./normalize.css');
+
+:root{
+    --color-primario: #8a4e6c;
+    --color-secundario: #a11f1f;
+    --color-background-sombra: #E92F3D30;
+    --color-background: #EFF6F5;
+    --color-texto: #A1A5A6;
+}
+
+body{
+    background: var(--color-background);
+    text-align: -webkit-center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding: 50px 50px 50px 50px;
+}
+
+
+/* HEADER */
+
+header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background: #fff;
+    column-gap: 50px;
+}
+
+header ul{
+    list-style: none;
+    align-self: center;
+}
+
+header li{
+    float: left;
+    padding: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+
+.botones{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botones a{
+    margin-right: 40px;
+}
+
+
+.nav{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 10vh);
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/usa-flag-background-PB7RCLR.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--color-primario);
+    padding: 100px 30px;
+    border-radius: 50px;
+    color: var(--color-background);
+}
+
+.navigation ul{
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li{
+    float: left;
+    padding: 20px;
+}
+
+.navigation a{
+    text-decoration: none;
+    background-color: var(--color-background);
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--color-primario); 
+}
+
+/* UNIDADES */
+
+.unidades{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    grid-template-columns: 60% 40%;
+}
+
+.primarias{
+    background-color: var(--color-primario);
+}
+
+.primarias .texto{
+    align-self: center;
+    justify-self: center;
+    color: var(--color-background);
+    padding: 0 20px;  
+    border-radius: 50px;
+}
+
+.secundarias{
+    background: var(--color-background);  
+}
+
+.secundarias .texto{
+    align-self: center;
+    color: var(--color-primario);
+}
+
+.img{
+    display: flex;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.uno{
+    background-image: url('../images/curso_foto_58.jpg');
+    background-position: 40%;
+}
+
+.dos{
+    background-image: url('../images/abrir-academia-ingles.jpg');
+    background-position: center;
+}
+
+.tres{
+    background-image: url('../images/falar-ingles-americano-1060x707.jpg');
+    background-position: 60%;
+}
+
+.cuatro{
+    background-image: url('../images/freddy-g-sw57ga_fojq-unsplash-1-1.jpg');
+    background-position: center;
+}
+
+.cinco{
+    background-image: url('../images/unnamed.jpg');
+}
+
+.unidades p{
+    text-align: justify;
+    padding: 0 50px;
+}
+
+.unidades h3{
+    padding: 0 60px;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    background: #fff;
+    justify-content: center;
+    align-items: center;    
+}
+
+footer p{
+    font-weight: 600;
+    line-height: 30px;
+    padding: 30px 0;
+    margin: 0;
+}
+
